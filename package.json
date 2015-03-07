@@ -1,0 +1,30 @@
+{
+  "name": "reacts",
+  "version": "0.0.0",
+  "description": "Front-end react framework for BigPipe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigpipe/reacts"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "reactive",
+    "reacts",
+    "reacting"
+  ],
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bigpipe/reacts/issues"
+  },
+  "homepage": "https://github.com/bigpipe/reacts",
+  "dependencies": {
+    "fittings": "1.0.x",
+    "react": "0.12.x"
+  }
+}
