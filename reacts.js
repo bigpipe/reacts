@@ -92,4 +92,4 @@ Reacts.Mixin = {};
 //
 // Expose our Reacts framework.
 //
-var reacts = module.exports = new Reacts();
+var reacts = module.exports = Reacts;
