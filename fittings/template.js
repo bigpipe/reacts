@@ -1,1 +1,1 @@
-require('reacts').view({fittings:name}, {fittings:client});
+reacts.view('{fittings:name}', {fittings:client});

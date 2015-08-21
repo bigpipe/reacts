@@ -1,1 +1,1 @@
-require('reacts').use({fittings:name}, {fittings:client});
+reacts.use({fittings:name}, {fittings:client});
