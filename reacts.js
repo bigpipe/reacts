@@ -1,6 +1,7 @@
 'use strict';
 
 var EventEmitter = require('eventemitter3')
+  , Component = require('./component')
   , React = require('react');
 
 /**
@@ -21,25 +22,13 @@ function Reacts() {
 
 Reacts.prototype = new EventEmitter();
 Reacts.prototype.constructor = Reacts;
-Reacts.prototype.emits = require('emits');
 
-/**
- * Render a given React component in our supplied container.
- *
- * @param {React} component The Component that needs to be rendered.
- * @param {Object} spread What ever needs to be spread upon the component.
- * @api public
- */
-Reacts.prototype.render = function render(component, spread) {
-  try {
-    return React.render(
-      React.createElement(component, React.__spread(spread || {})),
-      this.container
-    );
-  } catch (e) {
-    this.emit('error', e);
-    return this.render(this.react.error);
-  }
+Reacts.prototype.arrive = function arrive(name, data, state) {
+  var reacts = this
+    , component = new Component(reacts);
+
+  component.configure(name, data || {}, state);
+  reacts.emit('create', component);
 };
 
 /**
