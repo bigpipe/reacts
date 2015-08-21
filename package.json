@@ -26,7 +26,7 @@
   "dependencies": {
     "emits": "~3.0.0",
     "eventemitter3": "~1.1.1",
-    "fittings": "1.1.x",
+    "fittings": "1.2.x",
     "react": "0.12.x"
   }
 }
